@@ -1,0 +1,25 @@
+{
+    "name": "current",
+    "version": "0.0.1",
+    "description": "Notifications Core API",
+    "scripts": {
+        "start": "node index.js",
+        "test": "lab",
+        "migrations:up": "db-migrate up:init --config config/database.json -e init; db-migrate up --config config/database.json -e dev;"
+    },
+    "main": "index.js",
+    "dependencies": {
+        "@hapi/boom": "^9.1.0",
+        "@hapi/hapi": "^19.1.1",
+        "@hapi/joi": "^17.1.1",
+        "db-migrate": "^0.11.11",
+        "db-migrate-pg": "^1.2.2",
+        "fast-csv": "^4.3.1",
+        "hapi-auth-jwt2": "^10.1.0",
+        "jsonwebtoken": "^8.5.1",
+        "line-reader": "^0.4.0",
+        "massive": "^6.6.0",
+        "mongoose": "^5.9.20"
+    },
+    "devDependencies": {}
+}

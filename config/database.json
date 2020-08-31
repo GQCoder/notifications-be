@@ -1,0 +1,5 @@
+{
+    "dev": { "ENV": "CONNECTION_STRING" },
+    "init": { "ENV": "SCHEMALESS_CONNECTION_STRING" },
+    "sql-file": true
+}
